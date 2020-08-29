@@ -5,7 +5,11 @@
 
 ## Running Locally
 
-Make sure you have [Node.js](http://nodejs.org/) and the [Heroku Toolbelt](https://toolbelt.heroku.com/) installed.
+Make sure you have:
+* [Node.js](http://nodejs.org/)
+* [Heroku Toolbelt](https://toolbelt.heroku.com/) installed.
+* An account in [MongoDB](https://account.mongodb.com/account/login) and signin for [MongoDB Atlas](https://www.mongodb.com/cloud/atlas). 
+* You need to change the username and password in the `app.js` file.
 
 ```sh
 git clone git@github.com:Lucifergene/Basic-ToDo-App.git
