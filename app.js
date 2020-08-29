@@ -6,7 +6,6 @@ const bodyParser = require('body-parser');
 
 //CREATING AN INSTANCE OF THE EXPRESS PACKAGE
 const app = new express();
-require('dotenv').config();
 
 //SETTING THE PORT ON WHICH THE SERVER WILL RUN TO VARIABLE, SO THAT THE SYSTEM IN WHICH IT IS RUN DECIDES IT.
 const PORT = process.env.PORT || 5000;
@@ -37,7 +36,7 @@ app.use(bodyParser.urlencoded({
 }));
 
 // Connect to MongoDB
-mongoose.connect('mongodb+srv://USERNAME:PASSWORD@cluster0-qiqen.mongodb.net/test?retryWrites=true&w=majority', {useUnifiedTopology: true, useNewUrlParser: true })
+mongoose.connect(`mongodb+srv://${USERNAME}:${PASSWORD}@cluster0-qiqen.mongodb.net/test?retryWrites=true&w=majority`, {useUnifiedTopology: true, useNewUrlParser: true })
 
   .then(() => 
         console.log('You Are MongoDB Connected !'))
