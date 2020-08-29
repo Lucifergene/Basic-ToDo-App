@@ -18,6 +18,7 @@
     "express-ejs-layouts": "^2.5.0",
     "express-generator": "^4.16.1",
     "mongoose": "^5.7.1",
-    "request": "^2.88.0"
+    "request": "^2.88.0",
+    "dotenv": "^8.1.0"
   }
 }
